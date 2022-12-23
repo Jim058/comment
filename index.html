@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*預設值*/
+        body{
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        ul, li, input {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+        }
+
+
+        /*評論區*/
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            
+        }
+
+        .comment {
+            margin-top: 30px;
+            max-width: 98%;
+            padding: 0 20px;
+        }
+
+        .comment  li {
+            margin: 10px 0;
+            padding: 3px 10px;
+            border: 1px solid #ccc;
+            box-shadow: 1px 1.7px 8px #888;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        /*使用者留言區*/
+        .userInput {
+            width: 80%;
+            margin: 50px auto 0;
+        }
+
+        ul > input {
+            
+            display: block;
+            margin: 10px auto ;
+            width: 100%;
+        }
+        li > h2{
+            margin: 10px 15px;
+        }
+        li > p {
+            margin: 10px 20px;
+        }
+        .name, .contentTxt {
+            padding: 5px;
+        }
+        .name {
+            height:35px;
+        }
+
+        .contentTxt {
+            height: 135px;
+        }
+
+        .btn {
+            width: 45px;
+            font-size: 1em;
+            padding: 2px;
+        }
+        .line {
+            height: 1px;
+            width: 95%; 
+            background-color: #888;
+           margin-left: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="comment">
+            
+            
+        </ul>
+        <ul class="userInput">
+            <input class="inputbox name" type="text">
+            <input class="inputbox contentTxt" type="text">
+            <input class="inputbox btn" type="button" value="送出"> 
+        </ul>
+    </div>
+
+
+    
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
